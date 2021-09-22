@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#style1 {
+			display: inline-block;
+			width: 200px;
+			text-align: right;
+			font-weight: bold;
+		}
+		#style2{
+			display:  inline-block;
+			width:  300px;
+			text-align: right;
+		}
+		h3{
+			margin-bottom: 0px;
+		}
+		textarea{
+			vertical-align: top;
+		}
+
+
+		  
+	</style>
+<title>Task 1</title>
+</head>
+<body>
+
+	<p><span style="color: #FF0000;">*</span> . Denotes Required Information </p>
+	<p><strong>> 1 Donation </strong> > 2 Confirmation   > Thank you! </p>
+	
+	<form>
+		<h3><span style="color: #FF0000"> Donor Information</span></h3>
+		<label id=style1>First Name<span style="color: #FF0000;">*</span></label>
+		<input type="text" name="fname"><br>
+		<label id=style1> Last Name <span style="color: #FF0000;">*</span></label>
+		<input type="text" name="lname"><br>
+		<label id=style1> Company <span style="color: #FF0000;">*</span></label>
+		<input type="text" name="company"><br>
+		<label id=style1> Address1 <span style="color: #FF0000;">*</span></label>
+		<input type="text" name="address1"><br>
+		<label id=style1> Address2 <span style="color: #FF0000;">*</span></label>
+		<input type="text" name="address2"><br>
+		<label id=style1> City <span style="color: #FF0000;">*</span></label>
+		<input type="text" name="city"><br>
+		<label id=style1> State <span style="color: #FF0000;">*</span></label>
+		<select name="state">
+			<option value="" disabled selected> Select a state</option>
+			<option value="Dhaka"> Dhaka</option>
+			<option value="Chittagong"> Chittagong</option>
+			<option value="Rajshahi"> Rajshahi</option>
+			<option value="Barishal"> Barishal</option>
+		</select><br>
+		<label id=style1> Zip Code <span style="color: #FF0000;">*</span></label>
+		<input type="text" name="zip"><br>
+		<label id=style1> Country <span style="color: #FF0000;">*</span></label>
+		<select name="country">
+			<option value="" disabled selected> Select a Country</option>
+			<option value="Bangladesh"> Bangladesh</option>
+			<option value="India"> India</option>
+			<option value="Japan"> Japan</option>
+		</select><br>
+		<label id=style1>Phone</label>
+		<input type="text" name="phone"><br>
+		<label id=style1>Fax</label>
+		<input type="text" name="fax"><br>
+		<label id=style1> Email <span style="color: #FF0000;">*</span></label>
+		<input type="text" name="email"><br>
+		<label id=style1> Donation Amount <span style="color: #FF0000;">*</span></label>
+		<input type="radio" name="donationamount" value="none" checked>
+		<label>None</label>
+		<input type="radio" name="donationamount" value="$50" checked>
+		<label>$50</label>
+		<input type="radio" name="donationamount" value="$75" checked>
+		<label>$75</label>
+		<input type="radio" name="donationamount" value="$100" checked>
+		<label>$100</label>
+		<input type="radio" name="donationamount" value="$250" checked>
+		<label>$250</label>
+		<input type="radio" name="donationamount" value="other" checked>
+		<label>other</label><br>
+		<label>(Check a button or type in your amount) <strong> Other Amount $ </strong></label>
+		<input type="number" name="other"><br>
+		<label id=style1>Recurring Donation</label>
+		<input type="checkbox" name="recurringdonation" value="interested">
+		<label>I am interested in giving on a regular basis</label><br>
+		<label style="display: block; width: 200px; text-align: right;">(checked if yes)</label>
+		<label id=style1></label><label>Monthly Credit Card $ </label><input type="text" name="amount"><label> For </label><input type="text" name="monthnumber"><label> Months </label>
+
+		<h3><span style="color: #FF0000"> Honorium and Memorial Donation Information</span></h3>
+		
+		<label id=style1> I would like to make this donation </label>
+		<input type="radio" name="donationto" value="ToHonor" checked>
+		<label>To Honor</label>
+		<input type="radio" name="donationto" value="InMemoryOf" checked>
+		<label>In Memory Of</label><br>
+
+		<label id=style1>Name</label>
+		<input type="text" name="donorMemoryName"><br>
+		<label id=style1> Acknowledge Donation To </label>
+		<input type="text" name="acknowledgeName"><br>
+		<label id=style1> Address </label>
+		<input type="text" name="acknowledgeAddress"><br>
+		<label id=style1> City </label>
+		<input type="text" name="acknowledgeCity"><br>
+		<label id=style1> State </label>
+		<select name="acknowledgeState">
+			<option value="" disabled selected> Select a state</option>
+			<option value="Dhaka"> Dhaka</option>
+			<option value="Chittagong"> Chittagong</option>
+			<option value="Rajshahi"> Rajshahi</option>
+			<option value="Barishal"> Barishal</option>
+		</select><br>
+		<label id=style1> Zip </label>
+		<input type="text" name="acknowledgezip"><br>
+		
+		<h3><span style="color: #FF0000"> Additional Information</span></h3>
+		<label> Please enter your name, company or organization as you would like it to appear in our publications: </label><br>
+		<label id=style1>Name</label>
+		<input type="text" name="additionalName"><br>
+		<input type="checkbox" name="anonymousgift" value="anonymous">
+		<label> I would like my gift to remain anonymous</label><br>
+		<input type="checkbox" name="matchingdonation" value="matching">
+		<label> My employer offers a matching gift program. I will mail the matching gift form.</label><br>
+		<input type="checkbox" name="noletter" value="noletter">
+		<label> Please save the cost of acknowledging this gift by not mailing a thank you letter.</label><br><br>
+
+		<label id=style1><b>Comments</b><label style="display: block font-weight: normal ; font-size:14px ; width: 200px; text-align: right; ">(Please type any questions or feedback here)</label></label>
+		<textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+	
+		<label id=style1> <strong> How may we contact you </strong> </label>
+		<input type="checkbox" name="contact1" value="email">
+		<label> E-mail</label><br>
+		<input type="checkbox" name="contact2" value="postalmail" style = "margin-left: 207.5px;">
+		<label> Postal mail</label><br>
+		<input type="checkbox" name="contact3" value="telephone" style = "margin-left: 207.5px;">
+		<label> Telephone</label><br>
+		<input type="checkbox" name="contact4" value="fax" style = "margin-left: 207.5px;">
+		<label> Fax</label><br>
+
+		
+		<label style="display: block; color: #BEBEBE;">I would like to recieve newsletters and information about special events by:</label>
+		<input type="checkbox" name="promotioncontact1" value="promotionemail" style = "margin-left: 207.5px;" >
+		<label > E-mail</label><br>
+		<input type="checkbox" name="promotioncontact2" value="promotionpostalmail" style = "margin-left: 207.5px;" >
+		<label> Postal mail</label><br>
+		<input type="checkbox" name="volunteering" value="volunteeringyes">
+		<label> I would like information about volunteering with the</label><br>
+		<input type="button" value="reset" style = "margin-left: 207.5px;">
+		<input type="button" value="continue"  >
+
+	</form>
+
+</body>
+</html>
